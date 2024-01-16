@@ -11,7 +11,7 @@
 <body class="container-fluid">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">2° Guerra Mundial</a>
+            <h1 class="navbar-brand">2° Guerra Mundial</h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -76,7 +76,7 @@
                     <p class="card-text">Data de Criação: <?php echo $item['user_date_created_account']; ?></p>
                 </div>
                 <div class="ml-auto">
-                    <!-- <a href="<?= base_url('user/' . $item['id']) ?>" class="btn btn-primary mr-2">Editar dados</a> -->
+                    <a href="<?= base_url('editar/' . $item['id']) ?>" class="btn btn-primary mr-2">Editar dados</a>
                     <a href="<?= base_url('delete/' . $item['id']) ?>" class="btn btn-danger">Excluir dados</a>
                 </div>
             </div>

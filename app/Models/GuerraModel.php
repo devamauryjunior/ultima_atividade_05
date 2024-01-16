@@ -39,4 +39,21 @@ class GuerraModel extends Model
         $query = "DELETE FROM guerra WHERE id = '$id';";
         return $db->query($query);
     }
+
+    public function atualizarConsequencia($dados)
+    {
+        $db = \Config\Database::connect();
+        $novaConsequencia = $dados['novaconsequencia'];
+        $id = $dados['id'];
+        $query = "UPDATE guerra set consequencia = '$novaConsequencia' WHERE id = '$id';";
+        return $db->query($query);
+
+    }
+
+    public function getOneConsequencia($id)
+    {
+        $db = \Config\Database::connect();
+        $query = "SELECT * FROM guerra WHERE id = '$id'";
+        return $db->query($query)->getResultArray();
+    }
 }

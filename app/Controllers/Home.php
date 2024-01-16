@@ -11,6 +11,26 @@ class Home extends BaseController
         return view('index', ['consequencia' => $getConquencias]);
     }
 
+    public function screenEditar($id)
+    {
+        $guerraModel =  new \App\Models\GuerraModel();
+        $resultado = $guerraModel->getOneConsequencia($id);
+        // var_dump($resultado);
+        return view('/editar', ['resultado' => $resultado]);
+    }
+
+    public function atualizarConsequencia()
+    {
+        $guerraModel =  new \App\Models\GuerraModel();
+        $resultado = $guerraModel->atualizarConsequencia($_POST);
+        // var_dump($resultado);
+        if($resultado) {
+            return redirect('/');
+        }
+        // $session
+        return view('/');
+    }
+
     public function sendConsequencia()
     {
         $guerraModel =  new \App\Models\GuerraModel();

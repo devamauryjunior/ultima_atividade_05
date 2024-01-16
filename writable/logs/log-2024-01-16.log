@@ -63,3 +63,32 @@ INFO - 2024-01-16 16:45:08 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-01-16 16:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-16 16:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-16 16:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 21:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 21:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 21:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 21:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 21:31:55 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "/editar" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/editar')
+ 2 SYSTEMPATH\Common.php(864): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Home.php(16): redirect('/editar')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->screenEditar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 21:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 21:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 21:51:58 --> ErrorException: Undefined array key "idUser"
+in APPPATH\Models\GuerraModel.php on line 47.
+ 1 APPPATH\Models\GuerraModel.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idUser"', 'C:\\laragon\\www\\ultima_atividade_jean\\app\\Models\\GuerraModel.php', 47)
+ 2 APPPATH\Controllers\Home.php(25): App\Models\GuerraModel->atualizarConsequencia([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->atualizarConsequencia()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 21:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 21:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 21:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 21:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 21:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 21:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
